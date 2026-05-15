@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: samru_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: samru_coupon_app
+    ports:
+      - "5432:5432"
+    volumes:
+      - samru_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  samru_postgres_data: 
+  
