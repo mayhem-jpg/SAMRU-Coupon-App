@@ -104,17 +104,6 @@ CREATE TABLE hours (
     closed BOOLEAN DEFAULT FALSE
 );
 
--- SPECIAL HOURS
-
-CREATE TABLE special_hours (
-    special_hours_id SERIAL PRIMARY KEY,
-    entity_type VARCHAR(50),
-    entity_id INT,
-    date DATE,
-    open_time TIME,
-    close_time TIME,
-    closed BOOLEAN DEFAULT FALSE
-);
 
 -- SERVICES
 

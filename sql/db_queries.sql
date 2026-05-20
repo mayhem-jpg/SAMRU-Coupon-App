@@ -70,15 +70,6 @@ VALUES
 ('service', 1, 'Sunday', NULL, NULL, TRUE);
 
 
--- SPECIAL HOURS
-
-INSERT INTO special_hours (entity_type, entity_id, date, open_time, close_time, closed)
-VALUES
-('vendor', 1, '2026-02-17', '10:00', '15:00', FALSE),
-('vendor', 2, '2026-02-17', NULL, NULL, TRUE),
-('service', 1, '2026-03-10', '12:00', '16:00', FALSE);
-
-
 -- SERVICES
 
 INSERT INTO services (service_name, description, category, url, tags, image_url, published_status, updated_at, created_by, updated_by, location_id)
